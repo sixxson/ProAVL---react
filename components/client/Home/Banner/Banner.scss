@@ -1,7 +1,7 @@
 @tailwind components;
 
 @layer components {
-  .swiper-wrapper {  
+  .swiper-wrapper {
     .swiper-slide:nth-child(odd) {
       .box-banner {
         @apply relative overflow-hidden;
@@ -15,12 +15,12 @@
         }
 
         .content-banner {
-          @apply absolute xl:bottom-[calc(165/1920*100rem)] bottom-[10%] -translate-y-[10%] right-0 -lg:-right-[20%] translate-x-full
-            container flex justify-end items-end flex-col gap-base text-right text-white;
+          @apply absolute xl:bottom-[calc(165/1920*100rem)] bottom-[10%] -translate-y-[10%] right-10 translate-x-full;
+          @apply container flex justify-end items-end flex-col gap-base text-right text-white;
         }
 
         .title-banner {
-          @apply rem:max-w-[480px] flex flex-col gap-base justify-end items-end;
+          @apply flex flex-col gap-base justify-end items-end;
         }
       }
     }
@@ -37,8 +37,8 @@
         }
 
         .content-banner {
-          @apply absolute xl:bottom-[calc(165/1920*100rem)] bottom-[10%] -translate-y-[10%] left-0 -lg:-left-[20%] -translate-x-full
-        container flex justify-start items-start flex-col gap-base text-left text-white;
+          @apply absolute xl:bottom-[calc(165/1920*100rem)] bottom-[10%] -translate-y-[10%] left-0 -translate-x-full;
+          @apply container flex justify-start items-start flex-col gap-base text-left text-white;
         }
 
         .title-banner {
@@ -84,7 +84,7 @@
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(20%);
+    transform: translateX(0%);
   }
 }
 
@@ -93,7 +93,7 @@
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-20%);
+    transform: translateX(0);
   }
 }
 

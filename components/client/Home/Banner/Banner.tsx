@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import ImageCustoms from "../../..//customUI/ImageCustoms";
+import ImageCustoms from "../../../customUI/ImageCustoms";
 import { Button } from "../../../ui/button";
 import './Banner.scss'
 
@@ -18,9 +18,9 @@ export default function Banner() {
             <ImageCustoms />
           </div>
           <div className="overlay-border"></div>
-          <div className="overlay-blur"></div>
-          <div className="content-banner">
-            <div className="title-banner">
+          <div className="overlay-blur "></div>
+          <div className="content-banner row">
+            <div className="title-banner col-5">
               <div className="format-content space-y-3">
                 <div className="body-2 line-clamp-3 font-extralight">
                   <p>
@@ -33,7 +33,7 @@ export default function Banner() {
                   </h1>
                 </div>
               </div>
-              <Link href="/" className='py-3 px-6 body-2 uppercase bg-black border border-white rounded-full'>
+              <Link href="/" className='py-3 px-6 body-2 uppercase bg-black border border-white rounded-full hover:bg-primary-1 hover:border-transparent transition-300'>
                 kham pha ngay
               </Link>
             </div>

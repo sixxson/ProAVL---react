@@ -72,6 +72,7 @@ export const theme = {
     8: "calc(8/1920*100rem)",
   },
   container: {
+    
     center: true,
     padding: {
       DEFAULT: "15px",
@@ -83,7 +84,7 @@ export const theme = {
       sm: "100vw",
       md: "100vw",
       lg: "1024px",
-      xl: "calc(1440/1920*100rem)",
+      xl: "1400px",
     },
   },
   fontFamily: {
@@ -298,6 +299,7 @@ export const theme = {
     },
     backgroundImage: ({ theme }) => ({
       "linear-1": `linear-gradient(90deg, #181830 -0.01%, #1D1D38 19.26%, #141228 40.12%, #2C223A 75.47%, #231B33 99.98%)`,
+      "linear-1-white": `linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 47%, #F6F6F6 100%)`
     }),
     backgroundPosition: {
       "pos-100-0": "100% 0%",
